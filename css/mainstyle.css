@@ -1,0 +1,250 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* montserrat-600 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* montserrat-700 - cyrillic_latin */
+ @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-800 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100vh;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+
+    background-color: #ffffff;
+}
+body.no-scrol{
+    overflow: hidden;
+}
+p,
+h2{
+    margin: 0;
+    line-height: inherit;
+    font-weight: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    border: none;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+*:focus{
+    opacity: 0.5;
+    outline: none;
+}
+
+
+
+/* HEADER */
+
+.wraper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+}
+
+._container{
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.header__main-logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;    
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;  
+    margin-left: 20px;     
+}
+
+.logo-size{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text{
+    color: #000;
+    font-size: 1.7rem;
+    margin-left: 50px;
+}
+
+.navigation__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.navigator__item{
+    position: relative;
+    z-index: 50;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navigator__item:hover{
+    background-color:  rgb(151, 53, 151);
+}
+
+.navigator__item:not(:last-child){
+    margin-right: 20px;
+}
+
+.navigation__link{    
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.icon-navigation{
+    display: block;    
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* MAIN SECTION */
+
+.main{
+    flex: 1 1 auto;
+    padding-top: 100px;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #94568c;        
+}
+
+.footer__conteaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    color: #ffffff;    
+}
+
+.footer__main-logo{   
+    position: absolute;
+    top: 10px;
+    left: 10px;    
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-left: 20px;
+}
+
+.footer__nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.footer__nav-item:not(:last-child){
+    margin-right: 65px;
+}
+
+.footer__nav-link{
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
