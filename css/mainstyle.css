@@ -5,45 +5,18 @@
 * Browsers: last 4 version
 */
 
-/* montserrat-regular - cyrillic_latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
-  /* montserrat-600 - cyrillic_latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/montserrat-v25-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
-/* montserrat-700 - cyrillic_latin */
- @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/montserrat-v25-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-800 - cyrillic_latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/montserrat-v25-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+:root{
+    --primary-purple:#625977;
+    --background-blue:#5D6C96;
+    --background-purple-card:#BCB5D8;
+    --background-purple-side:#9587AA;
+    --background-purple-history:#CDC8DD;
 }
 
 html{
@@ -55,7 +28,7 @@ body{
     width: 100%;
     height: 100vh;
     color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Source Code Pro";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -108,80 +81,144 @@ img{
     overflow: hidden;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
+.header{     
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);    
 }
 
-.header__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80px;
+.header__container{    
+    min-height: 80px;    
+    background-color: var(--background-purple-side); 
 }
 
 ._container{
     position: relative;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 10px 0;
+    max-width: 1700px;
+    margin: 0 auto;    
 }
 
-.header__main-logo{
-    position: absolute;
-    top: 10px;
-    left: 10px;    
-    bottom: 10px;
+.header__row{
+    display: flex;    
+    align-items: flex-start;   
+}
+
+.logo{
+    display: flex; 
+    flex-basis: 80%;
+    background-color: var(--primary-purple); 
+    border-bottom-right-radius: 100px;      
+}
+
+.header__buttons{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;  
-    margin-left: 20px;     
+    flex-direction: column;
+    flex-basis: 20%;
+    align-items: flex-end;    
+    background-color: #ffffff;
+
 }
 
-.logo-size{
-    width: 50px;
-    height: 50px;
+.header__reagister{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--background-blue); 
+    color: #ffffff;
+    width: 100%;
 }
 
-.logo-text{
-    color: #000;
-    font-size: 1.7rem;
-    margin-left: 50px;
+.header__login{    
+    font-size: 2rem;
+    transform: translateY(5px);
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--background-purple-card); 
+    color: #ffffff;    
+    width: 60%;
+}
+
+.search{
+    display: flex;         
+    gap: 50px;
+    padding: 25px 35px;
+    background-color: var(--background-purple-side);     
+}
+
+.search__btn{
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 20px;
+    color: #5D6C96
+}
+
+.search__input{
+    margin-left: 250px;
+    flex-basis: 50%;
+}
+
+.navigator{
+    position: relative;
+    background-color: var(--background-blue); 
+    z-index: 50;
 }
 
 .navigation__list{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-right: 10px;
+    justify-content: center;
+    gap: 100px;    
 }
 
 .navigator__item{
-    position: relative;
-    z-index: 50;
+    position: relative;   
+    z-index: 50; 
     display: block;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px 30px 20px 90px;
+    border-radius: 5px;    
 }
 
 .navigator__item:hover{
-    background-color:  rgb(151, 53, 151);
+    background-color:  rgb(55, 46, 88);
 }
 
-.navigator__item:not(:last-child){
-    margin-right: 20px;
+.navigator__item > .histori {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    display: block;
+    background: url(/img/icon-book.png) center center no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;    
+}
+
+.navigator__item > .izbranoe {
+    position: absolute;
+    top: 14px;
+    right: 230px;
+    display: block;
+    background: url(/img/icon-izbranoe.png) center center no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;    
+}
+
+.navigator__item > .write {
+    position: absolute;
+    top: 16px;
+    right: 210px;
+    display: block;
+    background: url(/img/icon-write.png) center center no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;    
 }
 
 .navigation__link{    
     padding: 5px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .icon-navigation{
@@ -200,10 +237,126 @@ img{
 /* MAIN SECTION */
 
 .main{
-    flex: 1 1 auto;
-    padding-top: 100px;
+    flex: 1 1 auto;    
 }
 
+.hero__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    min-height: 800px;
+    padding: 100px 0 100px 80px;
+    color: #000000;
+}
+
+.hero__obvodka{
+    position: absolute;
+    top: -12px; 
+    left: 1px;
+    background: url(../img/dizain-obvotka.png) center center no-repeat;
+    background-size: contain;
+    width: 1100px;
+    height: 600px;
+    z-index: 1;
+}
+
+.hero__block{
+    position: relative;
+    top: 100px;       
+}
+
+.hero__background-color{
+    position: relative;
+    top: 5px;
+    left: 6px;
+    background-color: var(--background-purple-card);
+    width: 1090px;
+    height: 390px;
+    border-top-right-radius: 105px;
+    border-bottom-right-radius: 105px;
+}
+
+.hero__text-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__heading{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 20px 0;
+    background-color: var(--background-purple-side);
+    border-top-right-radius: 120px;
+}
+
+.hero__text{
+    padding: 20px 80px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.hero__background{
+    position: absolute;
+    top: -40px;
+    right: 0;    
+    background: url(../img/dizain-befaint-1.png) center center no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 600px;
+    z-index: 1;
+}
+
+.hero__btns{
+    position: relative;
+    top: 240px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+}
+
+.hero__read{
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 20px;
+    background-color: var(--background-blue);
+    border-radius: 10px;
+    margin-bottom: 20px;    
+}
+
+.hero__write{
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 20px;
+    background-color: var(--background-blue);
+    border-radius: 10px;
+}
+
+.hero__read:hover{
+    background-color:  rgb(55, 46, 88);
+}
+
+.hero__write:hover{
+    background-color:  rgb(55, 46, 88);
+}
+
+.hero__background-2{
+    position: absolute;
+    top: 500px;
+    left: -70px;    
+    background: url(../img/dizain-befaint-2.png) center center no-repeat; 
+    background-size: contain;   
+    width: 500px;
+    height: 600px;
+    z-index: 1;
+}
 
 
 
@@ -211,15 +364,20 @@ img{
 /* FOOTER */
 
 .footer{
-    background-color: #94568c;        
+    background-color: #ffffff;      
+    box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25);  
 }
 
 .footer__conteaner{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80px;
-    color: #ffffff;    
+    min-height: 110px;
+    color: #000000;    
+}
+
+.footer__link{
+    display: block;
 }
 
 .footer__main-logo{   
@@ -243,8 +401,13 @@ img{
     margin-right: 65px;
 }
 
+.footer__nav-link:hover{
+    background-color:  rgb(151, 53, 151);
+}
+
 .footer__nav-link{
     padding: 5px;
     font-size: 1rem;
     font-weight: 700;
+    border-radius: 5px;
 }
