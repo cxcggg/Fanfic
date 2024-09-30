@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wall</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/png" href="/img/pen-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
 </head>
 
 <body>
@@ -39,6 +40,8 @@
                         <ul class="navigation__list">
                             <li class="navigator__item"><span class="histori"></span><a href="#"
                                     class="navigation__link">Истории</a></li>
+                            <li class="navigator__item"><span class="tags"></span><a href="#"
+                                    class="navigation__link">Теги</a></li>
                             <li class="navigator__item"><span class="izbranoe"></span><a href="#"
                                     class="navigation__link">Избранное</a></li>
                             <li class="navigator__item"><span class="write"></span><a href="#"
@@ -111,15 +114,86 @@
                 <span class="top-right-dekop"></span><span class="top-right-dekop"></span><span
                     class="top-right-dekop"></span><span class="top-right-dekop"></span>
             </div>
+            <section class="rated">
+                <div class="raited__container _container">
+                    <div class="swiper swiper_rated swiper-horizontal swiper-backface-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rated__card rated-card">
+                                    <a class="rated-card__link">
+                                        <img src="./img/chipichapa.jpg" alt="Обложка" class="rated-card__img">
+                                    </a>
+                                    <div class="rated-card__text">
+                                        <div class="rated-card__text-top">
+                                            <div class="rated-card__bufer"></div>
+                                            <p class="rated-card__desc">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Necessitatibus, veniam iste. Deserunt impedit,
+                                                cupiditate maiores qui illo quae. Dolorem voluptas et possimus dolores
+                                                illo non laudantium quod debitis! Fugit, molestias.</p>
+                                        </div>
+                                        <strong class="rated-card__author">Caesar</strong>
+                                    </div>
+                                    <div class="rated-card__raiting">9.6</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rated__card rated-card">
+                                    <a class="rated-card__link">
+                                        <img src="./img/chipichapa.jpg" alt="Обложка" class="rated-card__img">
+                                    </a>
+                                    <div class="rated-card__text">
+                                        <div class="rated-card__bufer"></div>
+                                        <p class="rated-card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Necessitatibus, veniam iste. Deserunt impedit, cupiditate maiores qui
+                                            illo quae. Dolorem voluptas et possimus dolores illo non laudantium quod
+                                            debitis! Fugit, molestias.</p>
+                                        <strong class="rated-card__author">Caesar</strong>
+                                    </div>
+                                    <div class="rated-card__raiting">9.6</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rated__card rated-card">
+                                    <a class="rated-card__link">
+                                        <img src="./img/chipichapa.jpg" alt="Обложка" class="rated-card__img">
+                                    </a>
+                                    <div class="rated-card__text">
+                                        <div class="rated-card__bufer"></div>
+                                        <p class="rated-card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Necessitatibus, veniam iste. Deserunt impedit, cupiditate maiores qui
+                                            illo quae. Dolorem voluptas et possimus dolores illo non laudantium quod
+                                            debitis! Fugit, molestias.</p>
+                                        <strong class="rated-card__author">Caesar</strong>
+                                    </div>
+                                    <div class="rated-card__raiting">9.6</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rated__card rated-card">
+                                    <a class="rated-card__link">
+                                        <img src="./img/chipichapa.jpg" alt="Обложка" class="rated-card__img">
+                                    </a>
+                                    <div class="rated-card__text">
+                                        <div class="rated-card__bufer"></div>
+                                        <p class="rated-card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Necessitatibus, veniam iste. Deserunt impedit, cupiditate maiores qui
+                                            illo quae. Dolorem voluptas et possimus dolores illo non laudantium quod
+                                            debitis! Fugit, molestias.</p>
+                                        <strong class="rated-card__author">Caesar</strong>
+                                    </div>
+                                    <div class="rated-card__raiting">9.6</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
         </div>
         <footer class="footer">
             <div class="footer__conteaner _container">
-                <a href="#" class="footer__link">
-                    <div class="footer__main-logo">
-                        <img src="./img/main-logo.png" alt="Logo" class="logo-size">
-                        <h1 class="logo-text">THE WALL</h1>
-                    </div>
-                </a>
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
@@ -130,6 +204,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>
