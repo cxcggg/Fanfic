@@ -174,11 +174,11 @@ img{
     display: block;
     cursor: pointer;
     padding: 20px 30px 20px 90px;
-    border-radius: 5px;    
+    border-radius: 5px;     
 }
 
 .navigator__item:hover{
-    background-color:  rgb(55, 46, 88);
+    background-color:  rgb(55, 46, 88);    
 }
 
 .navigator__item > .histori {
