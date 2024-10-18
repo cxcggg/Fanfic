@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="icon" type="image/png" href="/img/pen-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container _container">
+            <div class="header__row">
+                <div class="header__logo logo">
+                    <div class="logo__the"></div>
+                    <div class="logo__wall"><a href="/main.html" class="logo__main"><img src="/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="header__buttons">
+                    <button id="register" class="header__reagister">register</button>
+                    <button id="login" class="header__login">log in</button>
+                    <div id="register-modal" class="account">
+                        <div class="account__content modal-content-register">
+                            <button data-dismiss="modal" class="close-registor">&times;</button>
+                        </div>
+                        <div class="account__forms">
+                            <div class="account__name-logo">THE WALL</div>
+                            <div class="account__registration">Зарегистрироваться</div>
+                            <div class="account__pola-add">Все поля обязательны к заполнению</div>
+                            <div class="account__name"><input id="reg-name-inp" type="text" name="name"
+                                    placeholder="Имя пользователя" class="registration__name modal-input "></div>
+                            <div class="account__email"><input id="reg-email-inp" type="email" name="email"
+                                    placeholder="Почта" class="registration__email modal-input "></div>
+                            <div class="account__password"><input id="reg-pass-inp" type="password" name="password"
+                                    class="registration__password modal-input " placeholder="Пароль"></div>
+                            <div class="account__password-rep"><input id="reg-pass-inp" type="password" name="password"
+                                    class="registration__password modal-input " placeholder="Повторите пароль"></div>
+                            <div class="account__registration-btn"><button type="submit"
+                                    class="registration__submit-btn modal-btn">Зарегистрироваться</button></div>
+                        </div>
+                    </div>
+                    <div id="login-modal" class="account">
+                        <div class="account__content modal-content-register">
+                            <button data-dismiss="modal" class="close-login">&times;</button>
+                        </div>
+                        <div class="account__forms">
+                            <div class="account__name-logo">THE WALL</div>
+                            <div class="account__registration">Войти</div>
+                            <div class="account__pola-add">Все поля обязательны к заполнению</div>
+                            <div class="account__name"><input id="reg-name-inp" type="text" name="name"
+                                    placeholder="Имя пользователя" class="registration__name modal-input "></div>
+                            <div class="account__password"><input id="reg-pass-inp" type="password" name="password"
+                                    class="registration__password modal-input " placeholder="Пароль"></div>
+                            <div class="account__registration-btn"><button type="submit"
+                                    class="registration__submit-btn modal-btn">Войти</button></div>
+                        </div>
+                    </div>
+                    <div class="modal-overlay"></div>
+                </div>
+            </div>
+            <div class="search header__search">
+                <input type="text" placeholder="Поиск по названию,тэгу..." class="search__input">
+                <button class="search__btn">Search</button>
+            </div>
+            <div class="header__navigator navigator">
+                <nav class="navigation__header">
+                    <ul class="navigation__list">
+                        <li class="navigator__item"><span class="histori"></span><a href="/pages/history.html"
+                                class="navigation__link">Истории</a></li>
+                        <li class="navigator__item"><span class="tags"></span><a href="#"
+                                class="navigation__link">Теги</a></li>
+                        <li class="navigator__item"><span class="izbranoe"></span><a href="/pages/izbranoe.html"
+                                class="navigation__link">Избранное</a></li>
+                        <li class="navigator__item"><span class="write"></span><a href="/pages/write.html"
+                                class="navigation__link">Написать</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="tag __container">
+            <div class="tag__search">
+                <div class="tags__search-flex"><input class="tags__input" type="text"><button
+                        class="tags__button">Введите тег</button><button class="tags__triggers" id="add-tag"
+                        data-togget="modal">Добавьте тэг</button>
+                </div>
+                <div id="modal-tag" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body"><button data-dismiss="modal" class="close">&times;</button>
+                                <h4 class="h4-tags">Добавление тэга</h4>
+                                <form action="#">
+                                    <div class="name-tag-div"><input type="text" name="name-tag"
+                                            class="name-tag form-control" placeholder="Название тэга" />
+                                    </div>
+                                    <div class="description-tag-div"><input type="text" name="description-tag"
+                                            class="description-tag form-control" placeholder="Описание тэга" /></div>
+                                    <div class="btn-login-div"><input class="btn login" type="submit"
+                                            value="Добавить тэг" /></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-overlay"></div>
+                <div class="tags__vse-tags">
+                    <ul class="tags__list">
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem ipsum dolor sit amet.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                    </ul>
+                    <ul class="tags__sum">
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                    </ul>
+                    <ul class="tags__list">
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                    </ul>
+                    <ul class="tags__sum">
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                    </ul>
+                    <ul class="tags__list">
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                        <li class="tags__each-tag">Lorem, ipsum.</li>
+                    </ul>
+                    <ul class="tags__sum">
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                        <li class="tags__number">(52)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__conteaner _container">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+                    <li class="footer__nav-item"><a href="rules.html" class="footer__nav-link">Правила</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
+                </ul>
+            </nav>
+            <div class="footer__link"><a href="#" class="footer__tg"></a>
+                <a href="https://vk.com/tw_the_wall" class="footer__vk"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/login.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>
