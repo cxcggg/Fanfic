@@ -11,13 +11,10 @@ addButton.addEventListener('click', () => {
 
     inputField.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            const savedText = inputField.value;
-            console.log("Название:", savedText);
+
 
             inputField.style = 'none'
             addButton.style.display = 'none';
-
-            inputField.value = '';
 
             inputField.removeEventListener('keypress', arguments.callee);
 
@@ -37,13 +34,12 @@ addButton1.addEventListener('click', () => {
 
     inputField1.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            const savedText = inputField1.value;
-            console.log("Автор:", savedText);
+
 
             inputField1.style = 'none'
             addButton1.style.display = 'none';
 
-            inputField1.value = '';
+
 
             inputField1.removeEventListener('keypress', arguments.callee);
 
@@ -63,13 +59,12 @@ addButton2.addEventListener('click', () => {
 
     inputField2.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            const savedText = inputField2.value;
-            console.log("Персонажи:", savedText);
+
 
             inputField2.style = 'none'
             addButton2.style.display = 'none';
 
-            inputField2.value = '';
+
 
             inputField2.removeEventListener('keypress', arguments.callee);
 
@@ -77,31 +72,30 @@ addButton2.addEventListener('click', () => {
     })
 })
 
-const addButton3 = document.getElementById('addButton-3');
-const inputField3 = document.getElementById('inputField-3');
+// const addButton3 = document.getElementById('addButton-3');
+// const inputField3 = document.getElementById('inputField-3');
 
-addButton3.addEventListener('click', () => {
-    addButton3.style.display = 'none';
+// addButton3.addEventListener('click', () => {
+//     addButton3.style.display = 'none';
 
-    inputField3.style.display = 'inline-block';
-    inputField3.style.marginLeft = '5px';
-    inputField3.focus();
+//     inputField3.style.display = 'inline-block';
+//     inputField3.style.marginLeft = '5px';
+//     inputField3.focus();
 
-    inputField3.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
-            const savedText = inputField3.value;
-            console.log("Описание:", savedText);
+//     inputField3.addEventListener('keypress', function (event) {
+//         if (event.key === 'Enter') {
 
-            inputField3.style = 'none'
-            addButton3.style.display = 'none';
 
-            inputField3.value = '';
+//             inputField3.style = 'none'
+//             addButton3.style.display = 'none';
 
-            inputField3.removeEventListener('keypress', arguments.callee);
 
-        }
-    })
-})
+
+//             inputField3.removeEventListener('keypress', arguments.callee);
+
+//         }
+//     })
+// })
 
 const addButton4 = document.getElementById('addButton-4');
 const inputField4 = document.getElementById('inputField-4');
@@ -115,13 +109,12 @@ addButton4.addEventListener('click', () => {
 
     inputField4.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            const savedText = inputField4.value;
-            console.log("Жанры:", savedText);
+
 
             inputField4.style = 'none'
             addButton4.style.display = 'none';
 
-            inputField4.value = '';
+
 
             inputField4.removeEventListener('keypress', arguments.callee);
 

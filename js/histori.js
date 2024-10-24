@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const historiBtn = document.getElementById('histori-open');
     const modalHistori = document.getElementById('histori-read');
     const historiClose = document.querySelector('.close-histori');
-    const modalOver = document.querySelector('.modal-overlay');
+    const modalOver = document.querySelector('.modal-overlay-black');
     historiBtn.addEventListener("click", () => {
         modalHistori.classList.add('active');
 

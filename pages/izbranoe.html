@@ -17,148 +17,154 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container _container">
-            <div class="header__row">
-                <div class="header__logo logo">
-                    <div class="logo__the"></div>
-                    <div class="logo__wall"><a href="/main.html" class="logo__main"><img src="/img/logo.png" alt=""></a>
+    <div class="wraper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__row">
+                    <div class="header__logo logo">
+                        <div class="logo__the"></div>
+                        <div class="logo__wall"><a href="/main.html" class="logo__main"><img src="/img/logo.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="header__buttons">
+                        <button id="register" class="header__reagister">register</button>
+                        <button id="login" class="header__login">log in</button>
+                        <div id="register-modal" class="account">
+                            <div class="account__content modal-content-register">
+                                <button data-dismiss="modal" class="close-registor">&times;</button>
+                            </div>
+                            <div class="account__forms">
+                                <div class="account__name-logo">THE WALL</div>
+                                <div class="account__registration">Зарегистрироваться</div>
+                                <div class="account__pola-add">Все поля обязательны к заполнению</div>
+                                <div class="account__name"><input id="reg-name-inp" type="text" name="name"
+                                        placeholder="Имя пользователя" class="registration__name modal-input "></div>
+                                <div class="account__email"><input id="reg-email-inp" type="email" name="email"
+                                        placeholder="Почта" class="registration__email modal-input "></div>
+                                <div class="account__password"><input id="reg-pass-inp" type="password" name="password"
+                                        class="registration__password modal-input " placeholder="Пароль"></div>
+                                <div class="account__password-rep"><input id="reg-pass-inp" type="password"
+                                        name="password" class="registration__password modal-input "
+                                        placeholder="Повторите пароль"></div>
+                                <div class="account__registration-btn"><button type="submit"
+                                        class="registration__submit-btn modal-btn">Зарегистрироваться</button></div>
+                            </div>
+                        </div>
+                        <div id="login-modal" class="account">
+                            <div class="account__content modal-content-register">
+                                <button data-dismiss="modal" class="close-login">&times;</button>
+                            </div>
+                            <div class="account__forms">
+                                <div class="account__name-logo">THE WALL</div>
+                                <div class="account__registration">Войти</div>
+                                <div class="account__pola-add">Все поля обязательны к заполнению</div>
+                                <div class="account__name"><input id="reg-name-inp" type="text" name="name"
+                                        placeholder="Имя пользователя" class="registration__name modal-input "></div>
+                                <div class="account__password"><input id="reg-pass-inp" type="password" name="password"
+                                        class="registration__password modal-input " placeholder="Пароль"></div>
+                                <div class="account__registration-btn"><button type="submit"
+                                        class="registration__submit-btn modal-btn">Войти</button></div>
+                            </div>
+                        </div>
+                        <div class="modal-overlay"></div>
                     </div>
                 </div>
-                <div class="header__buttons">
-                    <button id="register" class="header__reagister">register</button>
-                    <button id="login" class="header__login">log in</button>
-                    <div id="register-modal" class="account">
-                        <div class="account__content modal-content-register">
-                            <button data-dismiss="modal" class="close-registor">&times;</button>
-                        </div>
-                        <div class="account__forms">
-                            <div class="account__name-logo">THE WALL</div>
-                            <div class="account__registration">Зарегистрироваться</div>
-                            <div class="account__pola-add">Все поля обязательны к заполнению</div>
-                            <div class="account__name"><input id="reg-name-inp" type="text" name="name"
-                                    placeholder="Имя пользователя" class="registration__name modal-input "></div>
-                            <div class="account__email"><input id="reg-email-inp" type="email" name="email"
-                                    placeholder="Почта" class="registration__email modal-input "></div>
-                            <div class="account__password"><input id="reg-pass-inp" type="password" name="password"
-                                    class="registration__password modal-input " placeholder="Пароль"></div>
-                            <div class="account__password-rep"><input id="reg-pass-inp" type="password" name="password"
-                                    class="registration__password modal-input " placeholder="Повторите пароль"></div>
-                            <div class="account__registration-btn"><button type="submit"
-                                    class="registration__submit-btn modal-btn">Зарегистрироваться</button></div>
-                        </div>
-                    </div>
-                    <div id="login-modal" class="account">
-                        <div class="account__content modal-content-register">
-                            <button data-dismiss="modal" class="close-login">&times;</button>
-                        </div>
-                        <div class="account__forms">
-                            <div class="account__name-logo">THE WALL</div>
-                            <div class="account__registration">Войти</div>
-                            <div class="account__pola-add">Все поля обязательны к заполнению</div>
-                            <div class="account__name"><input id="reg-name-inp" type="text" name="name"
-                                    placeholder="Имя пользователя" class="registration__name modal-input "></div>
-                            <div class="account__password"><input id="reg-pass-inp" type="password" name="password"
-                                    class="registration__password modal-input " placeholder="Пароль"></div>
-                            <div class="account__registration-btn"><button type="submit"
-                                    class="registration__submit-btn modal-btn">Войти</button></div>
-                        </div>
-                    </div>
-                    <div class="modal-overlay"></div>
+                <div class="search header__search">
+                    <input type="text" placeholder="Поиск по названию,тэгу..." class="search__input">
+                    <button class="search__btn">Search</button>
+                </div>
+                <div class="header__navigator navigator">
+                    <nav class="navigation__header">
+                        <ul class="navigation__list">
+                            <li class="navigator__item"><span class="histori"></span><a href="history.html"
+                                    class="navigation__link">Истории</a></li>
+                            <li class="navigator__item"><span class="tags"></span><a href="tags.html"
+                                    class="navigation__link">Теги</a></li>
+                            <li class="navigator__item"><span class="izbranoe"></span><a href="#"
+                                    class="navigation__link">Избранное</a></li>
+                            <li class="navigator__item"><span class="write"></span><a href="write.html"
+                                    class="navigation__link">Написать</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="search header__search">
-                <input type="text" placeholder="Поиск по названию,тэгу..." class="search__input">
-                <button class="search__btn">Search</button>
+        </header>
+        <div class="main">
+            <div class="histori _container">
+                <div class="histori__obloshka">
+                    <div class="histori__img">
+                        <div class="img-background"></div>
+                    </div>
+                    <div class="histiry__title">МАЛЕНЬКИЕ ЖЕНЩИНЫ<div class="title-tags"> <img class="title-icon"
+                                src="/img/icon-eye .png" alt=""> 77K <img class="title-izbranoe-name"
+                                src="/img/icon-izbranoe-name.png" alt=""> 1.6K
+                        </div>
+                    </div>
+                    <div class="history__izbranoe"><svg class="svg-izbranoe-page" fill="#5d6c96"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="70px" height="70px">
+                            <path
+                                d="M 37 48 C 36.824219 48 36.652344 47.953125 36.496094 47.863281 L 25 41.15625 L 13.503906 47.863281 C 13.195313 48.042969 12.8125 48.046875 12.503906 47.867188 C 12.191406 47.6875 12 47.359375 12 47 L 12 3 C 12 2.449219 12.449219 2 13 2 L 37 2 C 37.554688 2 38 2.449219 38 3 L 38 47 C 38 47.359375 37.808594 47.6875 37.496094 47.867188 C 37.34375 47.957031 37.171875 48 37 48 Z" />
+                        </svg>
+                    </div>
+                    <div class="histori__text">
+                        <div class="text-data">
+                            <div class="text-avtor">Автор:</div>
+                            <div class="text-personaji">Пейринг и персонажи:</div>
+                            <div class="text-size">Жанры:</div>
+                            <div class="text-time">Статус работы:</div>
+                        </div>
+                    </div>
+                    <div class="text-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        perferendis excepturi incidunt sint expedita sed vero corrupti adipisci rerum fugiat! Esse quia
+                        id magni, culpa numquam temporibus qui praesentium explicabo nesciunt eius nihil facilis
+                        recusandae mollitia obcaecati. Perspiciatis aut blanditiis labore odio recusandae. Doloremque,
+                        repellat? Eum itaque possimus voluptatem, voluptatibus assumenda doloremque pariatur in porro
+                        ipsum necessitatibus atque earum deleniti reprehenderit eos minima. Impedit similique vel
+                        eveniet commodi illo voluptas error pariatur a eligendi aliquam voluptatum, beatae, blanditiis
+                        accusantium cupiditate eos unde. Earum dicta molestiae maiores illum soluta mollitia
+                        perferendis, dolorum, possimus, maxime esse ea quisquam itaque eaque libero ad provident placeat
+                        quis officia cumque voluptas impedit. Ullam quas dicta eos sit illo in dolorum fugiat
+                        accusantium atque quo, at natus consequatur optio assumenda? Esse pariatur possimus nisi sed
+                        excepturi in architecto ex eos, dignissimos voluptas a facilis tempore optio blanditiis
+                        temporibus et magni expedita debitis vel commodi iusto dolorum numquam aut explicabo. Magnam,
+                        consequuntur velit sequi recusandae dicta iste ab accusamus error modi ipsam quia voluptates
+                        quidem harum impedit delectus quisquam cumque deleniti quasi. Tempora voluptates impedit totam
+                        aliquam incidunt molestias minus ab sequi fugiat est quae facilis quod, et porro aliquid officia
+                        magni, nemo, nobis repellat. Eos, aut?</div>
+                    <div class="histori__genres">
+                        <div class="genres-tipes">Драма
+                        </div>
+                        <div class="genres-tipes-2">Романтика
+                        </div>
+                        <div class="genres-tipes">Спасение жизни
+                        </div>
+                        <div class="genres-tipes">Филосовия
+                        </div>
+                        <div class="genres-tipes-2">Драки
+                        </div>
+                        <div class="genres-tipes">Спасение жизни
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header__navigator navigator">
-                <nav class="navigation__header">
-                    <ul class="navigation__list">
-                        <li class="navigator__item"><span class="histori"></span><a href="/pages/history.html"
-                                class="navigation__link">Истории</a></li>
-                        <li class="navigator__item"><span class="tags"></span><a href="/pages/tags.html"
-                                class="navigation__link">Теги</a></li>
-                        <li class="navigator__item"><span class="izbranoe"></span><a href="#"
-                                class="navigation__link">Избранное</a></li>
-                        <li class="navigator__item"><span class="write"></span><a href="/pages/write.html"
-                                class="navigation__link">Написать</a></li>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__conteaner _container">
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+                        <li class="footer__nav-item"><a href="rules.html" class="footer__nav-link">Правила</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-    </header>
-    <div class="histori _container">
-        <div class="histori__obloshka">
-            <div class="histori__img">
-                <div class="img-background"></div>
-            </div>
-            <div class="histiry__title">МАЛЕНЬКИЕ ЖЕНЩИНЫ<div class="title-tags"> <img class="title-icon"
-                        src="/img/icon-eye .png" alt=""> 77K <img class="title-izbranoe-name"
-                        src="/img/icon-izbranoe-name.png" alt=""> 1.6K
+                <div class="footer__link"><a href="#" class="footer__tg"></a>
+                    <a href="https://vk.com/tw_the_wall" class="footer__vk"></a>
                 </div>
             </div>
-            <div class="history__izbranoe"><svg class="svg-izbranoe-page" fill="#5d6c96"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="70px" height="70px">
-                    <path
-                        d="M 37 48 C 36.824219 48 36.652344 47.953125 36.496094 47.863281 L 25 41.15625 L 13.503906 47.863281 C 13.195313 48.042969 12.8125 48.046875 12.503906 47.867188 C 12.191406 47.6875 12 47.359375 12 47 L 12 3 C 12 2.449219 12.449219 2 13 2 L 37 2 C 37.554688 2 38 2.449219 38 3 L 38 47 C 38 47.359375 37.808594 47.6875 37.496094 47.867188 C 37.34375 47.957031 37.171875 48 37 48 Z" />
-                </svg>
-            </div>
-            <div class="histori__text">
-                <div class="text-data">
-                    <div class="text-avtor">Автор:</div>
-                    <div class="text-personaji">Пейринг и персонажи:</div>
-                    <div class="text-size">Жанры:</div>
-                    <div class="text-time">Статус работы:</div>
-                </div>
-            </div>
-            <div class="text-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                perferendis excepturi incidunt sint expedita sed vero corrupti adipisci rerum fugiat! Esse quia
-                id magni, culpa numquam temporibus qui praesentium explicabo nesciunt eius nihil facilis
-                recusandae mollitia obcaecati. Perspiciatis aut blanditiis labore odio recusandae. Doloremque,
-                repellat? Eum itaque possimus voluptatem, voluptatibus assumenda doloremque pariatur in porro
-                ipsum necessitatibus atque earum deleniti reprehenderit eos minima. Impedit similique vel
-                eveniet commodi illo voluptas error pariatur a eligendi aliquam voluptatum, beatae, blanditiis
-                accusantium cupiditate eos unde. Earum dicta molestiae maiores illum soluta mollitia
-                perferendis, dolorum, possimus, maxime esse ea quisquam itaque eaque libero ad provident placeat
-                quis officia cumque voluptas impedit. Ullam quas dicta eos sit illo in dolorum fugiat
-                accusantium atque quo, at natus consequatur optio assumenda? Esse pariatur possimus nisi sed
-                excepturi in architecto ex eos, dignissimos voluptas a facilis tempore optio blanditiis
-                temporibus et magni expedita debitis vel commodi iusto dolorum numquam aut explicabo. Magnam,
-                consequuntur velit sequi recusandae dicta iste ab accusamus error modi ipsam quia voluptates
-                quidem harum impedit delectus quisquam cumque deleniti quasi. Tempora voluptates impedit totam
-                aliquam incidunt molestias minus ab sequi fugiat est quae facilis quod, et porro aliquid officia
-                magni, nemo, nobis repellat. Eos, aut?</div>
-            <div class="histori__genres">
-                <div class="genres-tipes">Драма
-                </div>
-                <div class="genres-tipes-2">Романтика
-                </div>
-                <div class="genres-tipes">Спасение жизни
-                </div>
-                <div class="genres-tipes">Филосовия
-                </div>
-                <div class="genres-tipes-2">Драки
-                </div>
-                <div class="genres-tipes">Спасение жизни
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
-    </div>
-    <footer class="footer">
-        <div class="footer__conteaner _container">
-            <nav class="footer__nav">
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
-                    <li class="footer__nav-item"><a href="rules.html" class="footer__nav-link">Правила</a></li>
-                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
-                </ul>
-            </nav>
-            <div class="footer__link"><a href="#" class="footer__tg"></a>
-                <a href="https://vk.com/tw_the_wall" class="footer__vk"></a>
-            </div>
-        </div>
-    </footer>
     <script src="/js/login.js"></script>
 </body>
 

@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wall</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/mainstyle.css">
     <link rel="icon" type="image/png" href="/img/pen-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../css/mainstyle.css">
 </head>
 
 <body>
@@ -24,8 +24,7 @@
                     <div class="header__logo logo">
                         <div class="logo__the"></div>
                         <div class="logo__wall"><a href="/main.html" class="logo__main"><img src="/img/logo.png"
-                                    alt=""></a>
-                        </div>
+                                    alt=""></a></div>
                     </div>
                     <div class="header__buttons">
                         <button id="register" class="header__reagister">register</button>
@@ -83,7 +82,7 @@
                                     class="navigation__link">Теги</a></li>
                             <li class="navigator__item"><span class="izbranoe"></span><a href="izbranoe.html"
                                     class="navigation__link">Избранное</a></li>
-                            <li class="navigator__item"><span class="write"></span><a href="#"
+                            <li class="navigator__item"><span class="write"></span><a href="write.html"
                                     class="navigation__link">Написать</a></li>
                         </ul>
                     </nav>
@@ -91,99 +90,18 @@
             </div>
         </header>
         <div class="main">
-            <div class="write-section _container">
-                <div class="histori__obloshka">
-                    <div class="histori__img">
-                        <form method="post" enctype="multipart/form-data">
-                            <div class="input-file-row">
-                                <label class="input-file">
-                                    <input type="file" name="file[]" multiple accept="image/*">
-                                    <span class="add-img"></span>
-                                </label>
-                                <div class="input-file-list"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="histiry__title">
-                        <button class="histiry__title-add " id="addButton">добавить название</button>
-                        <input type="text" id="inputField" class="add-text-name" style="display: none;">
-                    </div>
-                    <div class="histori__text-add">
-                        <div class="text-data">
-                            <div class="text-avtor">Автор: <button id="addButton-1" class="text-avtor-add">Добавить
-                                    +</button>
-                                <input type="text" id="inputField-1" class="add-text-avtor" style="display: none;">
-                            </div>
-                            <div class="text-personaji">Пейринг и персонажи:
-                                <button id="addButton-2" class="text-personaji-add">Добавить+</button>
-                                <input type="text" id="inputField-2" class="add-text-hero" style="display: none;">
-                            </div>
-                            <div id="buttonContainerJanrs" class="text-janr">Жанры:
-                                <button id="myButtonJanrs" class="text-personaji-add">Добавить+</button>
-                            </div>
-                            <ul id="myListJanrs" class="list-janrs">
-                                <li>Романтика</li>
-                                <li>Спасение жизни</li>
-                                <li>Драки</li>
-                                <li>Слово 4</li>
-                                <li>Слово 5</li>
-                                <li>Слово 6</li>
-                                <li>Слово 7</li>
-                                <li>Слово 8</li>
-                                <li>Слово 9</li>
-                                <li>Слово 10</li>
-                                <li>Слово 11</li>
-                                <li>Слово 12</li>
-                                <li>Слово 13</li>
-                                <li>Слово 14</li>
-                                <li>Слово 15</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="text-opinion-add">
-                        <button id="addButton-4" class="text-opinion-button">добавить описание</button>
-                        <textarea type="text" id="inputField-4" class="add-text-opinion"
-                            style="display: none;"></textarea>
-                    </div>
-                    <div class="histori__add-genres">
-                        <div class="histori__add-genres-contant">
-                            <div id="buttonContainerTags" class="button-container-tags">
-                                <button id="myButtonTags" class="genres-tipes-add">+ Тэг
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <ul id="myListTags" class="list-tags">
-                        <li>Романтика</li>
-                        <li>Спасение жизни</li>
-                        <li>Драки</li>
-                        <li>Слово 4</li>
-                        <li>Слово 5</li>
-                        <li>Слово 6</li>
-                        <li>Слово 7</li>
-                        <li>Слово 8</li>
-                        <li>Слово 9</li>
-                        <li>Слово 10</li>
-                        <li>Слово 11</li>
-                        <li>Слово 12</li>
-                        <li>Слово 13</li>
-                        <li>Слово 14</li>
-                        <li>Слово 15</li>
-                    </ul>
-                </div>
+            <div class="histori__write ___container">
+                <button class="histori__write-save">сохранить</button>
+                <textarea class="histoti_write-text"></textarea>
             </div>
-            <div class="button-save-histori __container">
-                <button class="button-save-histori-text">сохранить описание</button>
-            </div>
-            <div class="button-add _container"><a href="history-write.html" class="button-add-write">писать
-                    историю</a><button class="button-add-pablic">опубликовать историю</button></div>
         </div>
         <footer class="footer">
             <div class="footer__conteaner _container">
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
-                        <li class="footer__nav-item"><a href="rules.html" class="footer__nav-link">Правила</a></li>
+                        <li class="footer__nav-item"><a href="/main.html" class="footer__nav-link">О нас</a></li>
+                        <li class="footer__nav-item"><a href="rules.html" class="footer__nav-link">Правила</a>
+                        </li>
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
                     </ul>
                 </nav>
@@ -192,11 +110,8 @@
                 </div>
             </div>
         </footer>
+        <script src="/js/login.js"></script>
     </div>
-    <script src="/js/login.js"></script>
-    <script src="/js/add-img.js"></script>
-    <script src="/js/add-text.js"></script>
-    <script src="/js/add-tags-janrs.js"></script>
 </body>
 
 </html>
