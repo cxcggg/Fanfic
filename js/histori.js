@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", function () {
     })
     historiClose.addEventListener("click", () => {
         modalHistori.classList.remove('active');
-
+        modalOver.classList.remove('active');
     })
     modalOver.addEventListener("click", () => {
         modalOver.classList.remove('active');

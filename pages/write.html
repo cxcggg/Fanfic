@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/mainstyle.css">
     <link rel="icon" type="image/png" href="/img/pen-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
@@ -98,25 +94,28 @@
                             <div class="input-file-row">
                                 <label class="input-file">
                                     <input type="file" name="file[]" multiple accept="image/*">
-                                    <span class="add-img"></span>
+                                    <span id="addFileButton" class="add-img"></span>
                                 </label>
-                                <div class="input-file-list"></div>
+                                <div class="file-list"></div>
                             </div>
                         </form>
                     </div>
                     <div class="histiry__title">
-                        <button class="histiry__title-add " id="addButton">добавить название</button>
-                        <input type="text" id="inputField" class="add-text-name" style="display: none;">
+                        <button class="histiry__title-add " id="addButton">Добавить название</button>
+                        <input type="text" autocomplete="off" id="inputField" class="add-text-name"
+                            style="display: none;">
                     </div>
                     <div class="histori__text-add">
                         <div class="text-data">
                             <div class="text-avtor">Автор: <button id="addButton-1" class="text-avtor-add">Добавить
                                     +</button>
-                                <input type="text" id="inputField-1" class="add-text-avtor" style="display: none;">
+                                <input type="text" autocomplete="off" id="inputField-1" class="add-text-avtor"
+                                    style="display: none;">
                             </div>
                             <div class="text-personaji">Пейринг и персонажи:
                                 <button id="addButton-2" class="text-personaji-add">Добавить+</button>
-                                <input type="text" id="inputField-2" class="add-text-hero" style="display: none;">
+                                <input type="text" autocomplete="off" id="inputField-2" class="add-text-hero"
+                                    style="display: none;">
                             </div>
                             <div id="buttonContainerJanrs" class="text-janr">Жанры:
                                 <button id="myButtonJanrs" class="text-personaji-add">Добавить+</button>
@@ -141,7 +140,7 @@
                         </div>
                     </div>
                     <div class="text-opinion-add">
-                        <button id="addButton-4" class="text-opinion-button">добавить описание</button>
+                        <button id="addButton-4" class="text-opinion-button">Добавить описание</button>
                         <textarea type="text" id="inputField-4" class="add-text-opinion"
                             style="display: none;"></textarea>
                     </div>
@@ -173,16 +172,16 @@
                 </div>
             </div>
             <div class="button-save-histori __container">
-                <button class="button-save-histori-text">сохранить описание</button>
+                <button class="button-save-histori-text">Сохранить описание</button>
             </div>
-            <div class="button-add _container"><a href="history-write.html" class="button-add-write">писать
-                    историю</a><button class="button-add-pablic">опубликовать историю</button></div>
+            <div class="button-add _container"><a href="history-write.html" class="button-add-write">Писать
+                    историю</a><button class="button-add-pablic">Опубликовать историю</button></div>
         </div>
         <footer class="footer">
             <div class="footer__conteaner _container">
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+                        <li class="footer__nav-item"><a href="/main.html" class="footer__nav-link">О нас</a></li>
                         <li class="footer__nav-item"><a href="rules.html" class="footer__nav-link">Правила</a></li>
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
                     </ul>
