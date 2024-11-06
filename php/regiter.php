@@ -1,11 +1,11 @@
 <?php
     // Подключение к базе данных
-    $db_host = "localhost";
-    $db_name = "users";
-    $db_user = "username";
+    $db_username = "username";
     $db_password = "password";
+    $db_confirm_password = "confirm_password";
+    $db_email = "email";
 
-    $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
+    $conn = mysqli_connect($db_username,  $db_password, $db_confirm_password, $db_email);
 
     if (!$conn) {
         die("Ошибка подключения: " . mysqli_connect_error());

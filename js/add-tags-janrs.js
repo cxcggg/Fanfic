@@ -7,7 +7,7 @@ myButton.addEventListener("click", function () {
 });
 
 myList.addEventListener("click", function (event) {
-    if (event.target.tagName === 'LI') {
+    if (event.target.tagName === 'LI' && buttonContainer.querySelectorAll(".selected-word").length < 10) {
         const selectedWordSpan = document.createElement('span');
         selectedWordSpan.classList.add("selected-word");
         selectedWordSpan.textContent = event.target.textContent;

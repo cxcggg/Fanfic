@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const registorOver = document.querySelector('.modal-overlay');
     registorAddBtn.addEventListener("click", () => {
         modalregistor.classList.add('active');
-        document.body.classList.add('no-scrol');
+        // document.body.classList.add('no-scrol');
         registorOver.classList.add('active');
     })
     registorClose.addEventListener("click", () => {
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const registorOver = document.querySelector('.modal-overlay');
     loginAddBtn.addEventListener("click", () => {
         modallogin.classList.add('active');
-        document.body.classList.add('no-scrol');
+        // document.body.classList.add('no-scrol');
         registorOver.classList.add('active');
     })
     loginClose.addEventListener("click", () => {
